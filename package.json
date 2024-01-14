@@ -14,7 +14,7 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://github.com/CodAre-Development/express-api-ornek"
+    "url": "https://github.com/mustcodes/express-api-ornek"
   },
   "license": "MIT",
   "keywords": [

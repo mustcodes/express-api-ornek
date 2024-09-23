@@ -13,7 +13,7 @@ var logger = function (req, res, next) {
 app.use(logger);
 
 
-// Buradan sonrası tamamen size kalmış, istediğiniz apiyi kullanabilirsiniz.
+// Buradan sonrası tamamen size kalmış, istediğiniz apiyi kullanabilirsiniz. 
 const randomTextFaces = require('random-text-faces'); 
 app.get('/', (request, response) => {
   response.json({yüz: randomTextFaces.get()})

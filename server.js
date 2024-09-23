@@ -14,7 +14,7 @@ app.use(logger);
 
 
 // Buradan sonrası tamamen size kalmış, istediğiniz apiyi kullanabilirsiniz.
-const randomTextFaces = require('random-text-faces');
+const randomTextFaces = require('random-text-faces'); 
 app.get('/', (request, response) => {
- response.json({yüz: randomTextFaces.get()})
+  response.json({yüz: randomTextFaces.get()})
 })

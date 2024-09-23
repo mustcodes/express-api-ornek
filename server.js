@@ -7,11 +7,13 @@ var logger = function (req, res, next) {
   var tarih = new Date(); 
   var formatliTarih = tarih.getDate() + "." + (tarih.getMonth() + 1) + "." + tarih.getFullYear(); 
   formatliTarih += " " + tarih.getHours() + ":" + tarih.getMinutes();
-  console.log(formatliTarih + ':Yeni istek')
+  console.log(formatliTarih + ': Yeni istek')
   next()
 };
 app.use(logger);
 
+
+// Buradan sonrası tamamen size kalmış.
 const randomTextFaces = require('random-text-faces');
 app.get('/', (request, response) => {
  response.json({yüz: randomTextFaces.get()})
